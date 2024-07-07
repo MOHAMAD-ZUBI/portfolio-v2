@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className=" max-w-[1000px] mx-auto">
+    <main className=" max-w-[1000px] mx-auto max-lg:px-5">
       <Hero />
       {/* <TypographyBlockquote content={"@radix-ui/react-alert-dialog"} /> */}
     </main>
