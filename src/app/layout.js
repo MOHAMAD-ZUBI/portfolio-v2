@@ -1,6 +1,6 @@
 import { Inter, Acme, Ubuntu, Manrope, Fira_Code } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
+import Header from "@/components/main/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
