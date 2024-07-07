@@ -7,8 +7,8 @@ const Header = () => {
         <div className=" flex flex-row justify-between items-center w-full tracking-wider text-lg">
           <h2 className="w-full font-semibold">Mohamad Zubi</h2>
           <div className="flex flex-row justify-end gap-12 w-full items-center ">
-            <h1>Home</h1>
-            <h1>Fuck</h1>
+            <h1>About Me</h1>
+            <h1>Projects</h1>
           </div>
         </div>
       </div>
