@@ -3,7 +3,7 @@ import {
   TypographyBlockquote,
   TypographyInlineCode,
 } from "@/components/ui/TypographyQuote";
-import PrimaryButton from "../ui/PrimaryButton";
+import { PrimaryButton, SecondaryButton } from "../ui/Buttons";
 
 const Hero = () => {
   return (
@@ -23,8 +23,9 @@ const Hero = () => {
           "I am a digital polymath — a constantly evolving digital creator driven by a passion for lifelong learning and the desire to leave a lasting impact."
         }
       />
-      <div className="  mt-8">
-        <PrimaryButton content={"LinkedIn"} />
+      <div className=" flex flex-row gap-8  mt-8">
+        <SecondaryButton content={"Github"} />
+        <PrimaryButton content={"LinkedIn →"} />
       </div>
     </div>
   );
