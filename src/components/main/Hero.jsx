@@ -7,7 +7,7 @@ import { PrimaryButton, SecondaryButton } from "../ui/Buttons";
 
 const Hero = () => {
   return (
-    <div className=" mx-auto mt-32 ">
+    <div className=" mx-auto md:mt-32 mt-16 ">
       <TypographyInlineCode content={"npx welcome-to-my-portfolio"} />
       <div className=" flex flex-col w-full text-3xl md:text-7xl font-bold md:leading-[80px] ">
         <h1 className=" ">MOHAMAD ZUBI,</h1>
