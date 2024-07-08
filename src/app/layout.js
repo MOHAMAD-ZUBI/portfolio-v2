@@ -1,4 +1,4 @@
-import { Inter, Acme, Ubuntu, Manrope, Fira_Code } from "next/font/google";
+import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/main/Header";
 
@@ -13,14 +13,37 @@ const firaCode = Fira_Code({
 export const metadata = {
   title: "Mohamad Zubi - Full Stack Developer",
   description:
-    " Mohamad Zubi - software engineer, full stack developer, and open-source contributor.",
+    "Mohamad Zubi - software engineer, full stack developer, and open-source contributor.",
 };
+
+function setInitialTheme() {
+  const theme = document.cookie
+    .split("; ")
+    .find((row) => row.startsWith("theme="));
+  if (theme && theme.split("=")[1] === "dark") {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+}
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`dark ${firaCode.variable}`}>
+    <html lang="en" className={firaCode.variable}>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            (function() {
+              ${setInitialTheme.toString()}
+              setInitialTheme();
+            })();
+          `,
+          }}
+        />
+      </head>
       <body
-        className={`${inter.className} text-lightText bg-primaryLightBg dark:bg-primaryDarkBg dark:text-darkText `}
+        className={`${inter.className} text-lightText bg-primaryLightBg dark:bg-primaryDarkBg dark:text-darkText`}
       >
         <Header />
         {children}
