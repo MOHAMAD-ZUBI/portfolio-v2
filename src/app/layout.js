@@ -26,7 +26,7 @@ const getCookies = async () => {
 
 export default async function RootLayout({ children }) {
   const theme = await getCookies();
-  console.log(theme);
+
   return (
     <html
       lang="en"

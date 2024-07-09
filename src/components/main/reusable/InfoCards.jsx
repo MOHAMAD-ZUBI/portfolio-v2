@@ -43,6 +43,24 @@ const InfoCard = () => {
     },
   };
 
+  const technologies = [
+    { label: "NextJs", icon: <RiNextjsLine size={18} /> },
+    { label: "Typescript", icon: <TbBrandTypescript size={18} /> },
+    { label: "ReactJs", icon: <RiReactjsLine size={18} /> },
+    { label: "React Query", icon: <SiReactquery size={18} /> },
+    { label: "Tailwind CSS", icon: <RiTailwindCssLine size={18} /> },
+    { label: "HTML5", icon: <RiHtml5Line size={18} /> },
+    { label: "CSS3", icon: <RiCss3Line size={18} /> },
+    { label: "NodeJs", icon: <RiNodejsLine size={18} /> },
+    { label: "ExpressJs", icon: <SiExpress size={18} /> },
+    { label: "MongoDB", icon: <SiMongodb size={18} /> },
+    { label: "Laravel", icon: <SiLaravel size={18} /> },
+    { label: "AWS", icon: <SiAmazonaws size={18} /> },
+    { label: "Git", icon: <SiGit size={18} /> },
+    { label: "Github", icon: <SiGithub size={18} /> },
+    { label: "Vercel", icon: <SiVercel size={18} /> },
+  ];
+
   return (
     <motion.div variants={container} className=" flex flex-col gap-5 ">
       <div className=" bg-white  border-[1px] border-gray-200 dark:bg-[#0E0F11] rounded-3xl max-w-[600px] gap-4  flex flex-col justify-start">
@@ -66,96 +84,23 @@ const InfoCard = () => {
           variants={container}
           className=" p-8  dark:bg-[#0c0c0c]  bg-gray-100 flex flex-wrap gap-2 rounded-b-3xl w-full"
         >
-          <motion.div
+          {/* <motion.div
             variants={item}
             className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
           >
             <RiNextjsLine size={18} /> NextJs
-          </motion.div>
-          <motion.div
-            variants={item}
-            className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
-          >
-            <TbBrandTypescript size={18} /> Typescript
-          </motion.div>
-          <motion.div
-            variants={item}
-            className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
-          >
-            <RiReactjsLine size={18} /> ReactJs
-          </motion.div>
-          <motion.div
-            variants={item}
-            className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
-          >
-            <SiReactquery size={18} /> React Query
-          </motion.div>
-          <motion.div
-            variants={item}
-            className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
-          >
-            <RiTailwindCssLine size={18} /> Tailwind CSS
-          </motion.div>
-          <motion.div
-            variants={item}
-            className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
-          >
-            <RiHtml5Line size={18} /> HTML5
-          </motion.div>
-          <motion.div
-            variants={item}
-            className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
-          >
-            <RiCss3Line size={18} /> CSS3
-          </motion.div>
-          <motion.div
-            variants={item}
-            className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
-          >
-            <RiNodejsLine size={18} /> NodeJs
-          </motion.div>
-          <motion.div
-            variants={item}
-            className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
-          >
-            <SiExpress size={18} /> ExpressJs
-          </motion.div>
-          <motion.div
-            variants={item}
-            className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
-          >
-            <SiMongodb size={18} /> MongoDB
-          </motion.div>
-          <motion.div
-            variants={item}
-            className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
-          >
-            <SiLaravel size={18} /> Laravel
-          </motion.div>
-          <motion.div
-            variants={item}
-            className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
-          >
-            <SiAmazonaws size={18} /> AWS
-          </motion.div>
-          <motion.div
-            variants={item}
-            className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
-          >
-            <SiGit size={18} /> Git
-          </motion.div>
-          <motion.div
-            variants={item}
-            className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
-          >
-            <SiGithub size={18} /> Github
-          </motion.div>
-          <motion.div
-            variants={item}
-            className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
-          >
-            <SiVercel size={18} /> Vercel
-          </motion.div>
+          </motion.div> */}
+          {technologies.map(({ label, icon }) => (
+            <motion.div
+              key={label}
+              variants={item}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className=" flex flex-row cursor-pointer select-none gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
+            >
+              {icon} {label}
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </motion.div>

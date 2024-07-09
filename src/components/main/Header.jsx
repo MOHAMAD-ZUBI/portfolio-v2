@@ -27,9 +27,9 @@ const Header = () => {
     <div className="sticky top-0 flex justify-center items-center z-50">
       <div className="max-w-[1000px] max-md:max-w-[358px] mx-auto w-full  bg-gray-200/30 dark:bg-black/30 backdrop-blur-sm p-4 rounded-3xl max-md:mt-[10px] mt-[35px]">
         <div className="flex flex-row justify-between items-center w-full max-md:-mb-3 tracking-wider text-lg">
-          <h2 className="w-full tracking-wider md:font-semibold">
+          <h1 className="w-full tracking-wider md:font-[600]  dark:text-gray-200">
             Mohamad Zubi
-          </h2>
+          </h1>
           {/* Large screen bar start*/}
           <div className="flex flex-row max-md:hidden justify-end gap-12 w-full items-center">
             <h2 className=" ">About Me</h2>
