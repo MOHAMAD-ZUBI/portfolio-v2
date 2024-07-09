@@ -2,6 +2,7 @@ import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/main/Header";
 import Transition from "@/components/ui/Transition";
+import { cookies } from "next/headers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,32 +18,20 @@ export const metadata = {
     "Mohamad Zubi - software engineer, full stack developer, and open-source contributor.",
 };
 
-function setInitialTheme() {
-  const theme = document.cookie
-    .split("; ")
-    .find((row) => row.startsWith("theme="));
-  if (theme && theme.split("=")[1] === "dark") {
-    document.documentElement.classList.add("dark");
-  } else {
-    document.documentElement.classList.remove("dark");
-  }
-}
+const getCookies = async () => {
+  const cookieStore = cookies();
+  const theme = cookieStore.get("theme").value;
+  return theme;
+};
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const theme = await getCookies();
+  console.log(theme);
   return (
-    <html lang="en" className={`${firaCode.variable}`}>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            (function() {
-              ${setInitialTheme.toString()}
-              setInitialTheme();
-            })();
-          `,
-          }}
-        />
-      </head>
+    <html
+      lang="en"
+      className={`${firaCode.variable} ${theme == "dark" ? "dark" : ""}`}
+    >
       <body
         className={`${inter.className} text-lightText bg-primaryLightBg dark:bg-primaryDarkBg dark:text-darkText`}
       >

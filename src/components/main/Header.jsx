@@ -12,7 +12,7 @@ const Header = () => {
   useEffect(() => {
     const currentTheme = getCookie("theme") || "dark";
     setTheme(currentTheme);
-  }, []);
+  }, [theme]);
 
   const handleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
