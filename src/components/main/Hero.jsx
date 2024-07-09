@@ -10,11 +10,11 @@ const Hero = () => {
     <div className=" mx-auto md:mt-32 mt-16 h-screen">
       <TypographyInlineCode content={"npx welcome-to-my-portfolio"} />
       <div className=" flex flex-col w-full mt-2 text-4xl md:text-7xl font-bold md:leading-[80px] ">
-        <h1 className=" ">MOHAMAD ZUBI,</h1>
-        <h1 className="  opacity-60 bg-gradient-to-r dark:from-blue-500  dark:via-blue-200  dark:to-indigo-400 from-black via-zinc-900 to-slate-800 inline-block text-transparent bg-clip-text">
+        <h1 className=" text-gray-700 dark:text-white">MOHAMAD ZUBI,</h1>
+        <h1 className="  opacity-60 bg-gradient-to-r from-blue-600  via-blue-300  to-indigo-500 inline-block text-transparent bg-clip-text">
           I design and build
         </h1>
-        <h1 className="opacity-60 bg-gradient-to-r dark:from-indigo-400 dark:via-gray-200 dark:to-slate-300-400 from-slate-800 via-zinc-600 to-slate-300 inline-block text-transparent bg-clip-text">
+        <h1 className="opacity-60 bg-gradient-to-r from-indigo-500 via-gray-500 to-slate-600 inline-block text-transparent bg-clip-text">
           meaningful experiences.
         </h1>
       </div>

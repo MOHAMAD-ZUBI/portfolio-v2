@@ -1,6 +1,7 @@
 import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/main/Header";
+import Transition from "@/components/ui/Transition";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +30,7 @@ function setInitialTheme() {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={firaCode.variable}>
+    <html lang="en" className={`${firaCode.variable}`}>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -46,7 +47,7 @@ export default function RootLayout({ children }) {
         className={`${inter.className} text-lightText bg-primaryLightBg dark:bg-primaryDarkBg dark:text-darkText`}
       >
         <Header />
-        {children}
+        <Transition>{children}</Transition>
       </body>
     </html>
   );
