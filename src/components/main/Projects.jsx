@@ -3,7 +3,7 @@ import ProjectsCard from "./reusable/ProjectsCard";
 
 const Projects = () => {
   return (
-    <div className="h-screen bg-gray-200">
+    <div className="h-screen mt-96">
       <div className="flex flex-col justify-center items-center tracking-tight ">
         <h1 className="md:text-[3.75rem] max-md:text-4xl font-bold ">
           Featured Projects

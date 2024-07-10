@@ -10,9 +10,12 @@ export default function Home() {
       <Transition>
         <Hero />
       </Transition>
-      {/* <Projects /> */}
+
       <Transition>
         <About />
+      </Transition>
+      <Transition>
+        <Projects />
       </Transition>
       <Transition>
         <Footer />
