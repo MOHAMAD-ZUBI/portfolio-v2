@@ -75,7 +75,7 @@ const Projects = () => {
     github: "",
   };
   return (
-    <div className="max-md:mt-[500px] mt-96">
+    <div id="projects" className="max-md:mt-[500px] mt-96">
       <div className="flex flex-col justify-center items-center tracking-tight ">
         <h1 className="md:text-[3.75rem] max-md:text-4xl font-bold ">
           Featured Projects
@@ -85,7 +85,7 @@ const Projects = () => {
         </h2>
 
         <div className=" w-full h-[830px] overflow-hidden mt-12">
-          <div className=" h-[840px] overflow-y-scroll p-[10px] snap-y snap-mandatory w-full box-content space-y-4 ">
+          <div className=" h-[830px] overflow-y-scroll lg:p-[10px]  snap-y snap-mandatory w-full box-content space-y-4 ">
             {projectsData.map((project, index) => (
               <ProjectsCard key={index} projectData={project} />
             ))}

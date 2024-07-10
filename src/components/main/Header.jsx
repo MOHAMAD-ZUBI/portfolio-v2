@@ -32,8 +32,12 @@ const Header = () => {
           </h1>
           {/* Large screen bar start*/}
           <div className="flex flex-row max-md:hidden justify-end gap-12 w-full items-center">
-            <h2 className=" ">About Me</h2>
-            <h2>Projects</h2>
+            <a href="#about">
+              <h2 className=" ">About Me</h2>
+            </a>
+            <a href="#projects">
+              <h2>Projects</h2>
+            </a>
             <div className=" ease-linear duration-300">
               {theme === "light" ? (
                 <MdOutlineWbSunny size={30} onClick={handleTheme} />
@@ -63,10 +67,13 @@ const Header = () => {
         </div>
         <div className=" md:hidden w-full mt-4 ">
           {menu && (
-            <div className="flex flex-col gap-4 w-full absolute ease-linear duration-300 bg-gray-200/30 dark:bg-black/30 backdrop-blur-sm p-4 rounded-3xl">
-              <h2 className=" ">About Me</h2>
-              <h2>Projects</h2>
-              <h2>Contact</h2>
+            <div className="flex flex-col left-0 gap-4 w-full absolute  ease-linear duration-300 bg-gray-200/30 dark:bg-black/40 backdrop-blur-sm p-4 rounded-3xl">
+              <a href="#about">
+                <h2 className=" ">About Me</h2>
+              </a>
+              <a href="#projects">
+                <h2>Projects</h2>
+              </a>
             </div>
           )}
         </div>

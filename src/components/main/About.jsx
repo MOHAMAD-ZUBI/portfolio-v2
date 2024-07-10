@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const TechInfo = () => {
   return (
-    <div className=" h-screen relative -mt-32 mb-32">
+    <div id="about" className=" h-screen relative -mt-32 mb-32">
       <div className=" z-50">
         <div className="flex flex-col w-full items-center h-full">
           <p className=" max-md:text-sm text-gray-600 font-bold">HARDSKILLS</p>

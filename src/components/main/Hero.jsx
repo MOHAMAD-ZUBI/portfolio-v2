@@ -10,6 +10,7 @@ import {
   TailwindButton,
   TertiaryButton,
 } from "../ui/Buttons";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -20,7 +21,7 @@ const Hero = () => {
         <h1 className="  opacity-60 bg-gradient-to-r from-blue-600  via-blue-300  to-indigo-500 inline-block text-transparent bg-clip-text">
           I design and build
         </h1>
-        <h1 className="opacity-60 bg-gradient-to-r from-indigo-500 via-gray-500 to-slate-600 inline-block text-transparent bg-clip-text">
+        <h1 className="opacity-60 bg-gradient-to-r from-blue-500 via-gray-500 to-slate-600 inline-block text-transparent bg-clip-text">
           meaningful experiences.
         </h1>
       </div>
@@ -32,8 +33,15 @@ const Hero = () => {
         />
       </div>
       <div className=" flex flex-row gap-8  mt-8">
-        <TailwindButton content={"Github"} />
-        <TailwindButton content={"LinkedIn →"} />
+        <a href="mailto:mohamad-zubi@outlook.com">
+          <TailwindButton content={"Contact Me"} />
+        </a>
+        <Link
+          href={"https://www.linkedin.com/in/mohamad-zubi/"}
+          target="_blank"
+        >
+          <TailwindButton content={"LinkedIn →"} />
+        </Link>
       </div>
     </div>
   );
