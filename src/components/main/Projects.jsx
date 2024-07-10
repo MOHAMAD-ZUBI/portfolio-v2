@@ -6,7 +6,7 @@ const Projects = () => {
     {
       title: "resumeiry.tech",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt, elit non cursus.",
+        "I developed a comprehensive web platform designed to streamline the resume creation and enhancement process, leveraging advanced AI technologies to ensure optimal results. This tool offers several useful services.",
       technologies: [
         "NextJs",
         "Typescript",
@@ -35,13 +35,13 @@ const Projects = () => {
         "MongoDB",
       ],
       link: "",
-      img: "/assets/imgs/test4.png",
+      img: "/assets/imgs/e-commerce.png",
       github: "https://github.com/MOHAMAD-ZUBI/MERN-Ecommerce",
     },
     {
-      title: "MERN Stack Ecommerce",
+      title: "Real-estate Agency and platform",
       description:
-        "The E-Commerce Supplements Website project! This website is designed for users to browse and purchase supplements.",
+        "This project aims to streamline the real estate process for both individual users and agencies, making it easier to find, list, and manage properties.",
       technologies: [
         "NextJs",
         "Typescript",
@@ -50,19 +50,53 @@ const Projects = () => {
         "NodeJs",
         "ExpressJs",
         "MongoDB",
+        "Vercel",
       ],
-      link: "",
-      img: "/assets/imgs/test4.png",
-      github: "https://github.com/MOHAMAD-ZUBI/MERN-Ecommerce",
+      link: "https://alnafaz-real-estate.vercel.app/",
+      img: "/assets/imgs/realestate.png",
+      github: "https://github.com/MOHAMAD-ZUBI/Alnafaz-RealEstate",
+    },
+    {
+      title: "Portfolio V1",
+      description:
+        "Discover my 2024 portfolio! Built with Next.js & TypeScript, showcasing projects & skills. Fast, responsive, and sleek design. Explore & get inspired!",
+      technologies: [
+        "NextJs",
+        "Typescript",
+        "React Query",
+        "Tailwind CSS",
+        "Vercel",
+      ],
+      link: "https://v1.mohamad-zubi.com",
+      img: "/assets/imgs/v1-portfolio.png",
+      github: "https://github.com/MOHAMAD-ZUBI/next-ts-portfolio-2024",
+    },
+    {
+      title: "Youtube Vid Downloader",
+      description:
+        "This project was a great opportunity to experiment with web development technologies and to build a practical tool that many users will find useful. Feel free to explore, contribute, or use the project as a base for your own creations.",
+      technologies: [
+        "NextJs",
+
+        "React Query",
+        "Tailwind CSS",
+        "NodeJs",
+        "ExpressJs",
+        "MongoDB",
+        "Vercel",
+      ],
+      link: "https://loaderio.vercel.app/",
+      img: "/assets/imgs/ytdownloader.png",
+      github: "https://github.com/MOHAMAD-ZUBI/YT-vid-downloader",
     },
   ];
   const projectData = {
-    title: "resumeiry.tech",
+    title: "Youtube Vid Downloader",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt, elit non cursus.",
+      "This project was a great opportunity to experiment with web development technologies and to build a practical tool that many users will find useful. Feel free to explore, contribute, or use the project as a base for your own creations.",
     technologies: [
       "NextJs",
-      "Typescript",
+
       "React Query",
       "Tailwind CSS",
       "NodeJs",
@@ -70,8 +104,8 @@ const Projects = () => {
       "MongoDB",
       "Vercel",
     ],
-    link: "https://resumeiry.tech",
-    img: "/assets/imgs/test4.png",
+    link: "https://loaderio.vercel.app/",
+    img: "/assets/imgs/ytdownloader.png",
     github: "",
   };
   return (

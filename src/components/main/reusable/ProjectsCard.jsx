@@ -67,16 +67,21 @@ const ProjectsCard = ({ projectData }) => {
       <div className="flex flex-row justify-between md:text-lg font-semibold  ">
         <div className="flex flex-row items-center gap-5">
           <h1 className="">{projectData.title}</h1>
-          <div
-            className={`flex flex-row ${
-              projectData.github.length > 0
-                ? "cursor-pointer"
-                : "cursor-not-allowed"
-            } select-none gap-2 dark:bg-[#333333] bg-white text-sm w-fit rounded-3xl py-1 px-4 items-center`}
+          <Link
+            href={projectData.github ? projectData.github : "#"}
+            target={projectData.github ? "target='_blank'" : ""}
           >
-            <SiGithub size={18} />{" "}
-            {projectData.github.length > 0 ? "Public" : "Private"}
-          </div>
+            <div
+              className={`flex flex-row ${
+                projectData.github.length > 0
+                  ? "cursor-pointer"
+                  : "cursor-not-allowed"
+              } select-none gap-2 dark:bg-[#333333] bg-white text-sm w-fit rounded-3xl py-1 px-4 items-center`}
+            >
+              <SiGithub size={18} />{" "}
+              {projectData.github.length > 0 ? "Public" : "Private"}
+            </div>
+          </Link>
         </div>
         {projectData.link.length > 0 && (
           <Link href={projectData.link} target="_blank">
