@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { GiMeshNetwork } from "react-icons/gi";
+
 import { GrAppsRounded } from "react-icons/gr";
 import {
   RiCss3Line,
@@ -84,12 +84,6 @@ const InfoCard = () => {
           variants={container}
           className=" p-8  dark:bg-[#0c0c0c]  bg-gray-100 flex flex-wrap gap-2 rounded-b-3xl w-full"
         >
-          {/* <motion.div
-            variants={item}
-            className=" flex flex-row gap-2 dark:bg-[#1d1d1d] bg-white text-sm w-fit rounded-3xl py-2 px-4 items-center"
-          >
-            <RiNextjsLine size={18} /> NextJs
-          </motion.div> */}
           {technologies.map(({ label, icon }) => (
             <motion.div
               key={label}
