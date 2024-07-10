@@ -63,7 +63,7 @@ const technologies = [
 
 const ProjectsCard = ({ projectData }) => {
   return (
-    <div className=" md:w-[80%] bg-gradient-to-r min-h-[300px] dark:from-[#0E0F11] overflow-hidden border-[1px] border-white  dark:to-[#1b1d20] from-slate-100  to-slate-100 rounded-2xl px-5 pt-5 pb-1  max-md:pb-5">
+    <div className=" w-full snap-start bg-gradient-to-r h-[400px] dark:from-[#0E0F11] overflow-hidden border-[1px] border-white  dark:to-[#1b1d20] from-slate-100  to-slate-100 rounded-2xl px-5 pt-5 pb-1  max-md:pb-5">
       <div className="flex flex-row justify-between md:text-lg font-semibold  ">
         <div className="flex flex-row items-center gap-5">
           <h1 className="">{projectData.title}</h1>
