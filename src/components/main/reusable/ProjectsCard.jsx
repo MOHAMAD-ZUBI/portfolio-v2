@@ -61,29 +61,10 @@ const technologies = [
   { label: "Vercel", icon: <SiVercel size={18} /> },
 ];
 
-const projectData = {
-  title: "resumeiry.tech",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt, elit non cursus.",
-  technologies: [
-    "NextJs",
-    "Typescript",
-    "React Query",
-    "Tailwind CSS",
-    "NodeJs",
-    "ExpressJs",
-    "MongoDB",
-    "Vercel",
-  ],
-  link: "https://resumeiry.tech",
-  img: "/assets/imgs/test4.png",
-  github: "",
-};
-
-const ProjectsCard = () => {
+const ProjectsCard = ({ projectData }) => {
   return (
-    <div className=" w-[80%] bg-gradient-to-r min-h-[300px] dark:from-[#0E0F11] overflow-hidden  dark:to-[#1b1d20] from-slate-300 via-zinc-200 to-slate-300 rounded-2xl px-5 pt-5 ">
-      <div className="flex flex-row justify-between text-lg font-semibold  ">
+    <div className=" md:w-[80%] bg-gradient-to-r min-h-[300px] dark:from-[#0E0F11] overflow-hidden border-[1px] border-white  dark:to-[#1b1d20] from-slate-100  to-slate-100 rounded-2xl px-5 pt-5 pb-1  max-md:pb-5">
+      <div className="flex flex-row justify-between md:text-lg font-semibold  ">
         <div className="flex flex-row items-center gap-5">
           <h1 className="">{projectData.title}</h1>
           <div
@@ -97,9 +78,11 @@ const ProjectsCard = () => {
             {projectData.github.length > 0 ? "Public" : "Private"}
           </div>
         </div>
-        <Link href={projectData.link} target="_blank">
-          <RxExternalLink size={28} />
-        </Link>
+        {projectData.link.length > 0 && (
+          <Link href={projectData.link} target="_blank">
+            <RxExternalLink size={28} />
+          </Link>
+        )}
       </div>
       <div className="flex  flex-row justify-between w-full mt-12">
         <div>
