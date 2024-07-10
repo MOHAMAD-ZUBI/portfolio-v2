@@ -20,7 +20,7 @@ export const metadata = {
 
 const getCookies = async () => {
   const cookieStore = cookies();
-  const theme = cookieStore.get("theme").value || "dark";
+  const theme = cookieStore?.get("theme")?.value || "dark";
   return theme;
 };
 
