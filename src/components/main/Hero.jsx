@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="max-md:text-md max-md:max-w-[350px]">
         <TypographyBlockquote
           content={
-            "I am a digital polymath — a constantly evolving digital creator driven by a passion for lifelong learning and the desire to leave a lasting impact."
+            "I am a digital maven — consistently evolving, driven by a relentless pursuit of learning and a goal to make a significant impact."
           }
         />
       </div>
