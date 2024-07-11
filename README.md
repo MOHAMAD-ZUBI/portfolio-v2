@@ -44,6 +44,21 @@ Open http://localhost:3000 to view it in your browser.
  - Dark
  - Light
 
+## Previews
+
+![Portfolio Preview](images/newport1.png)
+![Portfolio Preview](images/newport2.png)
+![Portfolio Preview](images/newport3.png)
+![Portfolio Preview](images/newport4.png)
+![Portfolio Preview](images/newport5.png)
+![Portfolio Preview](images/newport6.png)
+![Portfolio Preview](images/newport7.png)
+![Portfolio Preview](images/newport8.png)
+
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue for bugs, feature requests, or questions.
+
+## License
+This project is licensed under the MIT License.
