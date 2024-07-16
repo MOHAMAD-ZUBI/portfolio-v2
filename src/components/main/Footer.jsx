@@ -13,7 +13,7 @@ import { RiStarLine } from "react-icons/ri";
 import { LuGitFork } from "react-icons/lu";
 
 const socials = [
-  { icon: <SiMedium size={30} />, link: "https://medium.com/@mohamadzubi" },
+  { icon: <SiMedium size={30} />, link: "https://medium.com/@mozubi128" },
   {
     icon: <SiGithub size={30} />,
     link: "https://github.com/mohamad-zubi/portfolio-v2",
