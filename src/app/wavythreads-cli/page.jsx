@@ -6,13 +6,6 @@ import { SiGithub, SiNpm } from "react-icons/si";
 const page = () => {
   return (
     <div className="min-h-screen max-w-[1050px] mx-auto md:px-4 max-md:px-2 ">
-      {/* <Head>
-        <title>WavyThreads CLI</title>
-        <meta
-          name="description"
-          content="WavyThreads CLI is a command-line tool designed by Mohamad Zubi to quickly scaffold and initialize backend projects."
-        />
-      </Head> */}
       <main className="container mx-auto p-6">
         <h1 className="text-4xl max-md:text-2xl font-bold text-center my-8">
           🚀 WavyThreads CLI 🚀
@@ -26,7 +19,7 @@ const page = () => {
         <p className="text-lg mb-4">
           WavyThreads CLI helps you quickly scaffold and initialize backend
           projects using Node.js, Express, MongoDB, bcrypt for password hashing,
-          and JWT for authentication tokens. It's an all-in-one solution to
+          and JWT for authentication tokens. It&apos;s an all-in-one solution to
           jumpstart your backend development.
         </p>
         <h2 className="text-2xl font-semibold my-4">Key Features:</h2>
