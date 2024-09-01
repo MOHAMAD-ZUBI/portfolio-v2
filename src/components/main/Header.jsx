@@ -53,7 +53,7 @@ const Header = () => {
 
           {/* Small screen bar start */}
 
-          <div className="flex flex-row md:hidden max-md:flex-row-reverse gap-4">
+          <div className="flex flex-row md:hidden max-md:flex-row-reverse  gap-4">
             <div onClick={() => setMenu(!menu)}>
               <HiMenuAlt4 size={30} />
             </div>
@@ -68,17 +68,21 @@ const Header = () => {
 
           {/* Small screen bar end*/}
         </div>
-        <div className=" md:hidden w-full mt-4 ">
-          {menu && (
-            <div className="flex flex-col left-0 gap-4 w-full absolute  ease-linear duration-300 bg-gray-200/30 dark:bg-black/40 backdrop-blur-sm p-4 rounded-3xl">
-              <a href="#about">
-                <h2 className=" ">About Me</h2>
-              </a>
-              <a href="#projects">
-                <h2>Projects</h2>
-              </a>
-            </div>
-          )}
+        <div className="md:hidden w-full mt-4">
+          <div
+            className={`flex flex-col left-0 transform transition-transform duration-300 ${
+              menu ? "translate-x-0" : "translate-x-full"
+            } ease-in-out gap-4 w-full absolute bg-gray-200/30 dark:bg-black/40 backdrop-blur-sm p-4 rounded-3xl ${
+              menu ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
+          >
+            <a href="#about">
+              <h2>About Me</h2>
+            </a>
+            <a href="#projects">
+              <h2>Projects</h2>
+            </a>
+          </div>
         </div>
       </div>
     </div>
