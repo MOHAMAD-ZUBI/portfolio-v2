@@ -91,6 +91,14 @@ const Footer = () => {
                   I would love from you to check out my resume builder project.
                 </p>
               </Link>
+              <Link href="/wavythreads-cli">
+                <h1 className="dark:text-white text-sm flex flex-row items-center gap-2">
+                  Wavythreads-cli npm package <FaExternalLinkAlt />
+                </h1>
+                <p className=" text-sm dark:text-gray-400 text-gray-600">
+                  Checkout my latest npm package.
+                </p>
+              </Link>
               <Link href={"https://v1.mohamad-zubi.com"} target="_blank">
                 <h1 className="dark:text-white text-sm flex flex-row items-center gap-2">
                   Portfolio - V1 <FaExternalLinkAlt />
